@@ -165,28 +165,106 @@ header nav {
 footer {
     background-color: #104c57;
     color: #fff;
-    padding: 2% 0;
+    padding: 3% 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
   }
   footer a {
     color: #fff;
     width: 80px;
-    content: "\f081";
+    height: 90%;
   }
   footer div {
     width: 30%;
   }
   nav.social {
-    margin-top: 10%;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+    height: 6rem;
   }
-  footer nav {
-      display: flex;
-      justify-content: flex-end;
-  }
- footer nav .links2 {
+ nav.links2 {
      display: flex;
      flex-flow: wrap column;
  }
+
+/*tablet*/
+ @media (max-width: 800px) {
+  .links {
+    width: 70%;
+  }
+  #top .titles {
+    width: 80%;
+  }
+  .contact-info {
+    width: 50%;
+  }
+  .img-container {
+    width: 80%;
+  }
+  .left {
+    width: 60%;
+  }
+  .right {
+    width: 40%;
+  }
+}
+
+/*phone*/
+@media (max-width: 500px) {
+  header nav {
+    flex-direction: column;
+    height: 18vh;
+  }
+  .links {
+    width: 100%;
+  }
+  .logo {
+    text-align: center;
+  }
+  .titles {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  .container {
+    flex-wrap: wrap;
+  }
+  .box {
+    width: 90%;
+    margin: 4% 0;
+  }
+  #about .text {
+    width: 90%;
+  }
+  .gallery div {
+    width: 90%;
+  }
+  #contact {
+    justify-content: center;
+  }
+  .left,
+  .right {
+    width: 90%;
+  }
+  .right {
+    order: -1;
+  }
+  #contact h2 {
+    order: -2;
+  }
+  .img-container {
+    width: 90%;
+  }
+  .contact-info {
+    width: 90%;
+  }
+  footer {
+    flex-wrap: wrap;
+  }
+  footer div {
+    width: 90%;
+    margin: 4% 0;
+  }
+  .copyright {
+    justify-content: flex-start;
+  }
+}
