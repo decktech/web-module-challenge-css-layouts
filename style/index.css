@@ -1,1 +1,192 @@
-/* Add CSS styling here */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* * {
+    box-sizing: border-box;
+    border: 2px solid black;
+    max-width: 100%;
+} */
+html {
+    font-size: 62.5%;
+  }
+body {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color: #ffecec;
+    font-family: "PT Sans", sans-serif;
+    background-image: linear-gradient(to bottom right,#001111,#f7fcfc);
+}
+h1,
+h2,
+h3,
+h4 {
+    letter-spacing: 2px;
+    font-family: "Nunito", sans-serif;
+    text-align: center;
+}
+h1 {
+    font-size: 5rem;
+}
+h2 {
+    font-size: 3rem;
+}
+h3 {
+    font-size: 2.5rem;
+}
+section {
+    padding: 4% 0;
+  }
+a {
+    text-decoration: none;
+    letter-spacing: 3px;
+    color: #4f4f4f;
+    font-family: "PT Sans", sans-serif;
+}
+a:hover {
+    color: #fcb131;
+}
+i {
+    font-size: 5rem;
+}
+header nav {
+    width: 100%;
+    top: 0;
+    background-color: #f7fcfc;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.links {
+    margin-right: 4%;
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+}
+#top {
+    background-image: url(https://picsum.photos/200/300);
+    margin:5%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+#top p {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+.container {
+    margin: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-flow: wrap row;
+  }
+  .box1,
+  .box2,
+  .box3,
+  .box4,
+  .box5,
+  .box6 {
+    width: 20%;
+    border: 3px solid #4f4f4f;
+    text-align: center;
+    padding: 4%;
+    margin: 4%;
+  }
+  .box h3 {
+    margin:10% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .box1 {
+    background-image: url(https://picsum.photos/id/237/200/300);
+  }
+  .box2 {
+    background-image: url(https://picsum.photos/200/300?grayscale);
+  }
+  .box3 {
+    background-image: url(https://picsum.photos/200/300);
+}
+.box4 {
+    background-image: url(https://picsum.photos/seed/picsum/200/300);
+}
+.box5 {
+    background-image: url(https://picsum.photos/200/300/?blur=2);
+}
+.box6 {
+    background-image: url(https://picsum.photos/id/870/200/300?grayscale&blur=2);
+}
+footer {
+    background-color: #104c57;
+    color: #fff;
+    padding: 2% 0;
+    display: flex;
+    justify-content: center;
+  }
+  footer a {
+    color: #fff;
+    width: 80px;
+    content: "\f081";
+  }
+  footer div {
+    width: 30%;
+  }
+  nav.social {
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  footer nav {
+      display: flex;
+      justify-content: flex-end;
+  }
+ footer nav .links2 {
+     display: flex;
+     flex-flow: wrap column;
+ }
