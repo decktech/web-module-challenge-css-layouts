@@ -41,11 +41,11 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/* * {
+* {
     box-sizing: border-box;
-    border: 2px solid black;
-    max-width: 100%;
-} */
+    margin: 100%;
+}
+
 html {
     font-size: 62.5%;
   }
@@ -61,7 +61,7 @@ h2,
 h3,
 h4 {
     letter-spacing: 2px;
-    font-family: "Nunito", sans-serif;
+    font-family: 'Kanit', sans-serif;
     text-align: center;
 }
 h1 {
@@ -71,7 +71,7 @@ h2 {
     font-size: 3rem;
 }
 h3 {
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 section {
     padding: 4% 0;
@@ -96,6 +96,8 @@ header nav {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: fixed;
 }
 .links {
     margin-right: 4%;
@@ -105,13 +107,15 @@ header nav {
 }
 #top {
     background-image: url(https://picsum.photos/200/300);
-    margin:5%;
+    margin:0%;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center top;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    /* border: 3px solid #4f4f4f; */
+    height: 50vh;
   }
 #top p {
     display: flex;
@@ -122,7 +126,7 @@ header nav {
 .container {
     margin: 5%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-content: center;
     flex-flow: wrap row;
   }
@@ -134,12 +138,8 @@ header nav {
   .box6 {
     width: 20%;
     border: 3px solid #4f4f4f;
-    text-align: center;
     padding: 4%;
     margin: 4%;
-  }
-  .box h3 {
-    margin:10% 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -193,78 +193,62 @@ footer {
   .links {
     width: 70%;
   }
-  #top .titles {
-    width: 80%;
+  h3 {
+    font-size: 1.5rem;
   }
-  .contact-info {
-    width: 50%;
-  }
-  .img-container {
-    width: 80%;
-  }
-  .left {
-    width: 60%;
-  }
-  .right {
-    width: 40%;
-  }
+  .container {
+    flex-flow: wrap column;
+    height: 40vh;
+    align-content: space-around;
+    margin: 1%;
+} 
+footer div {
+  margin: 3%;
 }
 
 /*phone*/
 @media (max-width: 500px) {
+  header {
+    display: flex;
+    flex-flow: column;
+  }
   header nav {
-    flex-direction: column;
-    height: 18vh;
-  }
-  .links {
-    width: 100%;
-  }
-  .logo {
-    text-align: center;
-  }
-  .titles {
-    background-color: rgba(255, 255, 255, 0.8);
-  }
-  .container {
-    flex-wrap: wrap;
-  }
-  .box {
-    width: 90%;
-    margin: 4% 0;
-  }
-  #about .text {
-    width: 90%;
-  }
-  .gallery div {
-    width: 90%;
-  }
-  #contact {
     justify-content: center;
   }
-  .left,
-  .right {
+  .links {
+    flex-direction: column;
+    text-align: center;
+  }
+  h1 {
+    margin-top: 50%;
+  }
+  #top p {
+    margin-bottom: 15%;
+  }
+  .container {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: auto;
+  }
+  .box1,
+  .box2,
+  .box3,
+  .box4,
+  .box5,
+  .box6 {
     width: 90%;
-  }
-  .right {
-    order: -1;
-  }
-  #contact h2 {
-    order: -2;
-  }
-  .img-container {
-    width: 90%;
-  }
-  .contact-info {
-    width: 90%;
+    margin: 4% 0;
+    height: 50%;
   }
   footer {
     flex-wrap: wrap;
   }
+  nav.links2{
+    margin-left: 3%;
+  }
   footer div {
     width: 90%;
     margin: 4% 0;
-  }
-  .copyright {
-    justify-content: flex-start;
   }
 }
